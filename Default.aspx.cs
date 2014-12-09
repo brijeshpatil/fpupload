@@ -15,7 +15,7 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        //FileUpload1.SaveAs(Server.MapPath("MyFolder/" + FileUpload1.FileName));
+        FileUpload1.SaveAs(Server.MapPath("~/MyFolder/" + FileUpload1.FileName));
       /*  if (File.Exists("D:/myfile.txt"))
         {
             StreamReader sr = File.OpenText("D:/myfile.txt");
@@ -34,6 +34,6 @@ public partial class _Default : System.Web.UI.Page
         processStartInfo.CreateNoWindow = true;
 
         Process process = Process.Start(processStartInfo);*/
-         Response.Write(FileUpload1.PostedFile.FileName);
+         //Response.Write(FileUpload1.PostedFile.FileName);
     }
 }
