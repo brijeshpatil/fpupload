@@ -28,7 +28,7 @@ public partial class _Default : System.Web.UI.Page
         }*/
         ProcessStartInfo processStartInfo = new ProcessStartInfo();
         processStartInfo.WorkingDirectory = @"C:\Users\pcustance\Desktop\";
-        processStartInfo.FileName = @"notepad.txt";
+        processStartInfo.FileName = @"notepad.exe";
         processStartInfo.Arguments = "test.txt";
         processStartInfo.WindowStyle = ProcessWindowStyle.Maximized;
         processStartInfo.CreateNoWindow = true;
