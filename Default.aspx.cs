@@ -15,7 +15,17 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        FileUpload1.SaveAs(Server.MapPath("~/MyFolder/" + FileUpload1.FileName));
+        
+        
+        try
+        {
+            FileUpload1.SaveAs(Server.MapPath("~/MyFolder/" + FileUpload1.FileName));
+        }
+        catch (Exception err)
+        {
+            Response.Write(err.Message);
+        }
+        
       /*  if (File.Exists("D:/myfile.txt"))
         {
             StreamReader sr = File.OpenText("D:/myfile.txt");
