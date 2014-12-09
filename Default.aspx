@@ -13,8 +13,8 @@
     <div>
      <div>
          <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-            <%--<asp:FileUpload ID="FileUpload1" runat="server" />--%>
-         <cc1:AsyncFileUpload ID="FileUpload1" runat="server" />
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+         <%--<cc1:AsyncFileUpload ID="FileUpload1" runat="server" />--%>
             <asp:Button ID="Button1" runat="server" Text="Upload" OnClick="Button1_Click" />
         </div>
     </div>
