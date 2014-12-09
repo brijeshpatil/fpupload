@@ -25,7 +25,7 @@ public partial class _Default : System.Web.UI.Page
         else
         {
             Response.Write("Not Found.....");
-        }*/
+        }
         ProcessStartInfo processStartInfo = new ProcessStartInfo();
         processStartInfo.WorkingDirectory = @"C:\Users\admin\Desktop";
         processStartInfo.FileName = @"notepad.exe";
@@ -33,6 +33,7 @@ public partial class _Default : System.Web.UI.Page
         processStartInfo.WindowStyle = ProcessWindowStyle.Maximized;
         processStartInfo.CreateNoWindow = true;
 
-        Process process = Process.Start(processStartInfo);
+        Process process = Process.Start(processStartInfo);*/
+         Response.Write(FileUpload1.PostedFile.FileName);
     }
 }
